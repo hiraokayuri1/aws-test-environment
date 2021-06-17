@@ -13,6 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 
 #install node modules
 npm install
+echo hello
 
 #start our node app in the background
-node dist/bundle.js 
+node dist/bundle.js
