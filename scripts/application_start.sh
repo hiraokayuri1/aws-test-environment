@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 
 #install node modules
 # npm install
-echo hello2
+echo hello
 ls
 
 #start our node app in the background
