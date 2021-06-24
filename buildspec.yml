@@ -16,10 +16,10 @@ phases:
     commands:
      - echo "build phase started"
      - echo "build complete"
-     artifacts:
-  files:
-    - dist/bundle.js
-    - package.json
-    - node_modules/**/*
-    - appspec.yml
-    - scripts/**/*
+  artifacts:
+    files:
+     - dist/bundle.js
+     - package.json
+     - node_modules/**/*
+     - appspec.yml
+     - scripts/**/*
