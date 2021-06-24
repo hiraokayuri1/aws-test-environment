@@ -3,30 +3,16 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "install > commands"
-      - npm install
-    finally:
-      - echo "install > finally"
+     - echo "install phase started"
+     - npm install
+     - echo "install phase ended"
   pre_build:
     commands:
-      - echo "pre_build > commands"
-    finally:
-      - echo "pre_build > finally"
+     - echo "pre_build aka test phase started"
+     - echo "mocha unit test"
+     - npm test
+     - echo "mocha unit test ended"
   build:
     commands:
-      - echo "build > commands"
-      - npm run build:prod
-    finally:
-      - echo "build > finally"
-  post_build:
-    commands:
-      - echo "post_build > commands"
-    finally:
-      - echo "post_build > finally"
-artifacts:
-  files:
-    - dist/bundle.js
-    - package.json
-    - node_modules/**/*
-    - appspec.yml
-    - scripts/**/*
+     - echo "build phase started"
+     - echo "build complete"
